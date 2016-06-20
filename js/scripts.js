@@ -3,10 +3,15 @@ $(document).ready(function() {
   var food = $("input#food").val();
   var animal = $("input#animal").val();
   var city = $("input#city").val();
+  var water = $("input#water").val();
+  var movie = $("input#movie").val();
 
-  console.log(food);
-  console.log(animal);
-  console.log(city);
+
+  var favorite = [];
+
+  favorite.push(food, animal, city, water, movie);
+
+  alert(favorite);
 
   event.preventDefault();
   });
