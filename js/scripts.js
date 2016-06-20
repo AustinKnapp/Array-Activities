@@ -20,6 +20,7 @@ $(document).ready(function() {
   favorite.push(food, animal, city, water, movie, coffee);
   favorite2.push(favorite[1], favorite[0], favorite[2]);
 
+  $("#listHere").html("<li>" + favorite2[0] + "</li>" + "<li>" + favorite2[1] + "</li>" + "<li>" + favorite2[2] + "</li>");
 
   console.log(favorite);
   console.log(favorite2);
