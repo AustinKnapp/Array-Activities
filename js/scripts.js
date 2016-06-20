@@ -1,17 +1,22 @@
+var favorite = [];
+var food = '';
+var animal = '';
+var city = '';
+var water = '';
+var movie = '';
+
+
 $(document).ready(function() {
   $("#blanks form").submit(function(event) {
-  var food = $("input#food").val();
-  var animal = $("input#animal").val();
-  var city = $("input#city").val();
-  var water = $("input#water").val();
-  var movie = $("input#movie").val();
-
-
-  var favorite = [];
+  food = $("input#food").val();
+  animal = $("input#animal").val();
+  city = $("input#city").val();
+  water = $("input#water").val();
+  movie = $("input#movie").val();
 
   favorite.push(food, animal, city, water, movie);
 
-  alert(favorite);
+  console.log(favorite);
 
   event.preventDefault();
   });
