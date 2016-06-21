@@ -6,6 +6,7 @@ var city = '';
 var water = '';
 var movie = '';
 var coffee = '';
+var iceCream = []
 
 
 $(document).ready(function() {
@@ -24,6 +25,9 @@ $(document).ready(function() {
 
   console.log(favorite);
   console.log(favorite2);
+
+  iceCream.push("Bourbon Pecan", "Half-Baked", "Americone Dream", "Phish Food", "Chubby Hubby").val();
+  $("#iceCream").html();
 
   event.preventDefault();
   });
